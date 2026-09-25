@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed near-neutral dark backgrounds becoming too bright or blue in 256-color terminals by selecting the nearest cube or grayscale color, and nudged the dark theme's tool success background so success, error, and pending tool blocks stay distinguishable in 256-color mode ([#2550](https://github.com/bastani-inc/atomic/issues/2550)).
+
 ## [0.9.21-alpha.1] - 2026-09-25
 
 ### Fixed
@@ -532,8 +536,6 @@
 - Reduced routing context with a concise model-selection guide and per-candidate contracts instead of repeated catalogs. Jev checks every request against conservative context budgets, splits verbose choices even below 255 options, and avoids sending oversized inputs.
 - Extension imports of provider environment helpers now resolve correctly during workflow loading and reload instead of failing with `compat.js/utils/provider-env` module errors.
 - Automatic subagent and workflow-stage model selection now receives the shipped model-selection guide directly, restoring benchmark guidance that the previous provider-identity filter excluded.
-- Fixed near-neutral dark backgrounds becoming too bright or blue in 256-color terminals by selecting the nearest cube or grayscale color ([#2550](https://github.com/bastani-inc/atomic/issues/2550)).
-- Fixed the dark theme's tool success and error backgrounds collapsing onto the same 256-color palette entry, which made completed and failed subagent notifications indistinguishable in 256-color terminals ([#2550](https://github.com/bastani-inc/atomic/issues/2550)).
 
 ## [0.9.20-alpha.3] - 2026-09-16
 
