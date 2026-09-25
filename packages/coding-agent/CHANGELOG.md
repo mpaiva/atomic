@@ -533,6 +533,7 @@
 - Extension imports of provider environment helpers now resolve correctly during workflow loading and reload instead of failing with `compat.js/utils/provider-env` module errors.
 - Automatic subagent and workflow-stage model selection now receives the shipped model-selection guide directly, restoring benchmark guidance that the previous provider-identity filter excluded.
 - Fixed near-neutral dark backgrounds becoming too bright or blue in 256-color terminals by selecting the nearest cube or grayscale color ([#2550](https://github.com/bastani-inc/atomic/issues/2550)).
+- Fixed the dark theme's tool success and error backgrounds collapsing onto the same 256-color palette entry, which made completed and failed subagent notifications indistinguishable in 256-color terminals ([#2550](https://github.com/bastani-inc/atomic/issues/2550)).
 
 ## [0.9.20-alpha.3] - 2026-09-16
 
